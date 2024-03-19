@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup>
+    <BOOST>$(MSBuildThisFileDirectory)</BOOST>
+    <BoostIncludes>$(BOOST)\algorithm\include;$(BOOST)\any\include;$(BOOST)\array\include;$(BOOST)\assert\include;$(BOOST)\atomic\include;$(BOOST)\bind\include;$(BOOST)\chrono\include;$(BOOST)\concept_check\include;$(BOOST)\config\include;$(BOOST)\container\include;$(BOOST)\container_hash\include;$(BOOST)\core\include;$(BOOST)\crc\include;$(BOOST)\date_time\include;$(BOOST)\describe\include;$(BOOST)\detail\include;$(BOOST)\dynamic_bitset\include;$(BOOST)\exception\include;$(BOOST)\filesystem\include;$(BOOST)\function\include;$(BOOST)\function_types\include;$(BOOST)\functional\include;$(BOOST)\integer\include;$(BOOST)\interprocess\include;$(BOOST)\intrusive\include;$(BOOST)\io\include;$(BOOST)\iostreams\include;$(BOOST)\iterator\include;$(BOOST)\lexical_cast\include;$(BOOST)\locale\include;$(BOOST)\move\include;$(BOOST)\mp11\include;$(BOOST)\mpl\include;$(BOOST)\numeric_conversion\include;$(BOOST)\optional\include;$(BOOST)\predef\include;$(BOOST)\preprocessor\include;$(BOOST)\random\include;$(BOOST)\range\include;$(BOOST)\ratio\include;$(BOOST)\smart_ptr\include;$(BOOST)\static_assert\include;$(BOOST)\system\include;$(BOOST)\thread\include;$(BOOST)\throw_exception\include;$(BOOST)\tokenizer\include;$(BOOST)\tti\include;$(BOOST)\tuple\include;$(BOOST)\type_index\include;$(BOOST)\type_traits\include;$(BOOST)\unordered\include;$(BOOST)\utility\include;$(BOOST)\uuid\include;$(BOOST)\variant\include;$(BOOST)\winapi\include</BoostIncludes>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB;BOOST_ALL_STATIC_LINK;BOOST_CHRONO_HEADER_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(BoostIncludes);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

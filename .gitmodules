@@ -160,3 +160,6 @@
 [submodule "variant"]
 	 path = variant
 	 url = https://github.com/boostorg/variant.git
+[submodule "winapi"]
+	 path = winapi
+	 url = https://github.com/boostorg/winapi.git
