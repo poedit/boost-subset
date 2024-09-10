@@ -118,6 +118,9 @@
 [submodule "ratio"]
 	 path = ratio
 	 url = https://github.com/boostorg/ratio.git
+[submodule "scope"]
+	 path = scope
+	 url = https://github.com/boostorg/scope.git
 [submodule "smart_ptr"]
 	 path = smart_ptr
 	 url = https://github.com/boostorg/smart_ptr.git
